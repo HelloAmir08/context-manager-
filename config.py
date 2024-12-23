@@ -1,7 +1,7 @@
 database_info = {
     'host' : 'localhost',
-    'database': 'person',
+    'database': 'DB_NAME',
     'port' : 5432,
-    'user' : 'postgres',
-    'password' : 'Amir1029',
+    'user' : 'USER_NAME',
+    'password' : 'PASSWORD',
 }
