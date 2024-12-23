@@ -33,7 +33,7 @@ class Person:
                 print('Person successfully saved')
 
     @staticmethod
-    def show_all_users():
+    def show_all_person():
         with DatabaseConnect(**config.database_info) as conn:
             with conn.cursor() as cur:
                 cur.execute('''select * from person''')
