@@ -33,7 +33,7 @@ class Person:
                 print('Person successfully saved')
 
     @staticmethod
-    def show_all_person():
+    def show_all_people():
         with DatabaseConnect(**config.database_info) as conn:
             with conn.cursor() as cur:
                 cur.execute('''select * from person''')
@@ -52,5 +52,5 @@ class Person:
 create_table()
 sherali = Person('sherali olimov', 25)
 sherali.save()
-print(Person.show_all_users())
+print(Person.show_all_people())
 print(Person.show_one_person('sherali olimov'))
